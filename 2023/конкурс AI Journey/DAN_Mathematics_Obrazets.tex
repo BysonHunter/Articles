@@ -1,0 +1,380 @@
+\documentclass{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+
+\usepackage{dan2e}
+
+
+\theoremstyle{definition}
+\newtheorem{defi}{Определение}
+\theoremstyle{plain}
+\newtheorem{remark}{Замечание}
+\newtheorem{theorem}{Теорема}
+\newtheorem{OldTheorem}{Теорема}
+\renewcommand{\theOldTheorem}{\Alph{OldTheorem}}
+
+\newtheorem{Theorem}{Теорема}
+\renewcommand{\theTheorem}{\arabic{theorem}$^\prime$}
+
+
+\begin{document}
+
+\Volume{505}
+\Year{2022}
+\Pages{46--49}
+
+\udk{517.54}
+
+\title{Обобщение неравенств Ландау и Беккера--Поммеренке}
+
+\author{О.\,С.~Кудрявцева\Addressmark[1,2]\Emailmark[1], А.\,П.~Солодов\Addressmark[1]\Emailmark[2]}
+
+\Addresstext[1]{Московский государственный университет им.~М.\,В.~Ломоносова;
+Московский центр фундаментальной и прикладной математики, Москва, Россия}
+
+\Addresstext[2]{Волгоградский государственный технический университет, Волгоград, Россия}
+
+\Emailtext[1]{kudryavceva\_os@mail.ru}
+
+\Emailtext[2]{apsolodov@mail.ru}
+
+\markboth{О.\,С.~Кудрявцева, А.\,П.~Солодов}{Обобщение неравенств Ландау и Беккера--Поммеренке}
+
+
+\presentedby{Представлено академиком Б.\,С.~Кашиным}
+
+\dateA{01.04.2022}
+\dateB{31.04.2022}
+\dateC{27.05.2022}
+
+
+\alttitle{Generalization of Landau and Becker--Pommerenke inequalities}
+
+\altauthor{O.\,S.~Kudryavtseva\Addressmark[a,b]\Emailmark[1], A.\,P.~Solodov\Addressmark[a]\Emailmark[2]}
+
+\altAddresstext[a]{Lomonosov Moscow State University, Moscow Center for Fundamental and Applied Mathematics, \\ Moscow, Russian Federation}
+
+\altAddresstext[b]{Volgograd State Technical University, Volgograd, Russian Federation}
+
+\altpresentedby{Presented by Academician of the RAS B.\,S.~Kashin}
+
+
+
+\maketitle
+
+\doi{10.31857/S2686954322040117}
+
+\begin{abstract}
+Получено обобщение  неравенств Ландау и Беккера--Поммеренке, лежащих в основе решения задачи
+о~точных областях однолистности  на подклассах голоморфных отображений.
+\end{abstract}
+
+\begin{keywords}
+голоморфное отображение, неподвижные точки, угловая производная, область однолистности
+\end{keywords}
+
+\begin{altabstract}
+A generalization of Landau and Becker--Pommerenke inequalities which are used in solving  of the problem of sharp  domains  of univalence on subclasses of holomorphic maps is obtained.	
+\end{altabstract}
+
+\begin{altkeywords}
+%emph{Keywords:}
+holomorphic map, fixed points, angular derivative, domain of univalence
+\end{altkeywords}
+
+\makeatletter
+
+
+
+\section*{Введение и формулировка результатов}
+
+Поиск области\footnote{Подстрочное примечание \No~1.}
+однолистности как для  одной голоморфной функции, так и на классе голоморфных функций является классической задачей геометрической теории функций. Длительная история исследования этой задачи накопила разнообразные методы и подходы к ее решению. В настоящей работе
+мы сосредоточимся на идейно близких подходах Ландау и Беккера"--~Поммеренке.
+Успешное решение Ландау задачи о точном радиусе круга однолистности на классе ограниченных голоморфных функций с внутренней неподвижной точкой, а также недавние результаты Беккера, Поммеренке и Солодова об областях однолистности для функций, имеющих неподвижную точку на границе, так или иначе связаны с получением точных неравенств на соответствующих классах. В упомянутых неравенствах оценивается общее значение функции в двух различных точках. В данной работе получены оценки общего значения функции в $n$ различных точках, что может найти применение в теории $n$"=листных функций.
+
+Пусть $\mathscr B$ "--- класс голоморфных отображений единичного круга $\mathbb D=\{z\in \mathbb C\colon |z|<1\}$ в себя. Обозначим через
+$\mathscr B[0]$ подкласс функций с внутренней неподвижной точкой $z=0$, а через $\mathscr B\{1\}$  --- подкласс функций с граничной неподвижной точкой $z=1$ и конечной угловой производной $f'(1)$:
+\begin{align*}
+\mathscr B[0]
+&=\bigl\{f\in \mathscr B\colon f(0)=0 \bigr\},\\
+\mathscr B\{1\}&=\bigl\{f\in \mathscr B\colon
+\angle\lim\limits_{z\to 1}f(z)=1,\, \angle\lim\limits_{z\to 1}f'(z)=f'(1)<\infty
+\bigr\}.
+\end{align*}
+\begin{theorem} \label{th1}
+	Пусть $f\in \mathscr B[0]$ и различные точки $a_1,\ldots,a_n\in \mathbb D$ таковы, что $f(a_1)=\ldots=f(a_n)=c$. Тогда
+	\begin{equation}\label{equC}
+		|c|\leqslant \prod_{k=1}^n|a_k|.
+	\end{equation}
+\end{theorem}	
+Неравенство~\eqref{equC} при $n=1$ "--- не что иное, как лемма Шварца. При $n=2$ неравенство~\eqref{equC}
+было получено Ландау и позволило ему найти единый  круг однолистности на классе %$\mathscr B_M[0]$, состоящем из функций,  у которых модуль производной в точке $z=0$ отделен от нуля числом $1/M$, $M>1$,
+$
+\mathscr B_{M}[0]=\bigl\{
+f\in \mathscr B[0]\colon  |f'(0)|\geqslant 1/M
+\bigr\}$, $M>1$.
+
+\begin{OldTheorem}[\rm {Ландау~\cite{Lan}}]\label{thLan}
+	Пусть $f\in \mathscr B_M[0]$, 	$M>1$.
+	Тогда $f$ однолистна в круге
+	$|z|<M-\sqrt{M^2-1}$.
+	При этом для любого $R>M-\sqrt{M^2-1}$ найдется функция $f\in \mathscr B_M[0]$, не  однолистная  в круге $|z|<R$. 	
+\end{OldTheorem}
+На классе  $\mathscr B\{1\}$ имеет место неравенство, в некотором смысле аналогичное неравенству~\eqref{equC}.
+\begin{theorem}\label{th2}
+	Пусть  $f\in \mathscr B\{1\}$
+	и  различные точки $a_1,\ldots,a_n\in \mathbb D$ таковы, что $f(a_1)=\ldots=f(a_n)=c$. Тогда
+	\begin{equation}\label{equBP}
+		f'(1)\,\frac{1-|c|^2}{|1-c|^2}\geqslant
+		\sum_{k=1}^{n}\frac{1-|a_k|^2}{|1-a_k|^2}.
+	\end{equation}
+\end{theorem}
+Неравенство~\eqref{equBP} при $n=1$ "--- это хорошо известная лемма Жюлиа"--~Каратеодори (см.~\cite[гл.~1, \S~1.4, теорема~1.5]{Ahl}). При $n=2$ это неравенство было получено Беккером и Поммеренке и применялось ими для нахождения области однолистности для функции $f\in\mathscr B\{1\}$.
+\begin{OldTheorem}[Беккер, Поммеренке~\cite{BeckerPom}]\label{thBP}
+	Пусть $f\in \mathscr B\{1\}$.
+	Тогда $f$ однолистна в области
+	\begin{equation*}\label{v2}
+		\left\{ z\in\mathbb D\colon   \frac{|1-f(z)|^2}{1-|f(z)|^2}\,\frac{1-|z|^2}{|1-z|^2}>\frac {f'(1)}2
+		\right\}.
+	\end{equation*}
+\end{OldTheorem}
+
+В~\cite{KudrSol2019}  показано,
+что на классе $\mathscr B\{1\}$ нет аналога теоремы~\ref{thLan}, т.~е.~нет единой области однолистности. Однако ситуация меняется, если рассмотреть сужение класса  $\mathscr B\{1\}$, добавив, например, условие неподвижности внутренней точки.
+Горяйнов~\cite{Gor2017}, изучая влияние угловой производной на поведение функции внутри круга, рассмотрел класс $\mathscr B[0, 1] =\mathscr B[0]\cap \mathscr B\{1\}$ и
+показал, что все функции из  $\mathscr B_{\alpha}[0, 1] =\bigl\{f\in\mathscr B[0,1]\colon f'(1)\leqslant \alpha\bigr\}$, $\alpha\in(1, 2)$, однолистны в некоторой области.
+Окончательное решение задачи о точной области однолистности на  классе функций с двумя неподвижными точками опирается на следующую теорему.
+\begin{theorem}\label{th3}
+	Пусть  $f\in \mathscr B[0,1]$
+	и  различные точки $a_1,\ldots,a_n\in \mathbb D$ таковы, что $f(a_1)=\ldots=f(a_n)=c$. Тогда
+	\begin{equation}\label{equGeneralPom}
+		f'(1)\,\frac{1-|c|^2}{|1-c|^2}\geqslant
+		\sum_{k=1}^{n}\frac{1-|a_k|^2}{|1-a_k|^2}+
+		\frac{|1-\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2}{1-|\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2},
+	\end{equation}
+	где
+	$\lambda(z)=-z\,{(1-\overline{z})}/{(1-z)}$.
+\end{theorem}
+\begin{remark}
+	В случае $z=1$ считаем, что $|1-z|^2/(1-|z|^2)=0$.	
+\end{remark}
+\begin{remark}
+	Поскольку $|\lambda (z)|=|z|$ для любого $z\in\mathbb D$,
+	то в силу теоремы~\ref{th1} верна оценка
+	
+$$
+|\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|\leqslant 1.
+$$
+Это влечет неотрицательность второго слагаемого в неравенстве~\eqref{equGeneralPom}. Тем самым, теорема~\ref{th3} является усилением теоремы~\ref{th2} на классе   $\mathscr B[0, 1]$.
+\end{remark}	
+Заметим, что отображение $\lambda$  обладает рядом других интересных свойств, которые подробно изучены в~\cite{Sol2021}. В частности, в силу  равенства
+\[
+\frac{|1-\lambda(c)|^2}{1-|\lambda(c)|^2}=\frac{1-|c|^2}{|1-c|^2}
+\]
+теорема~\ref{th3} допускает переформулировку  в симметричном виде.
+\begin{Theorem}\label{th3'}
+	Пусть  $f\in \mathscr B[0,1]$
+	и  различные точки $a_1,\ldots,a_n\in \mathbb D$ таковы, что $f(a_1)=\ldots=f(a_n)=c$. Тогда
+	\begin{equation*}
+		f'(1)\,\frac{|1-\lambda(c)|^2}{1-|\lambda(c)|^2}\geqslant
+		\sum_{k=1}^{n}\frac{|1-\lambda(a_k)|^2}{1-|\lambda(a_k)|^2}+
+		\frac{|1-\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2}{1-|\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2}.
+	\end{equation*}
+\end{Theorem}
+
+Неравенство~\eqref{equGeneralPom} при $n=1$ является уточнением леммы Жюлиа"--~Каратеодори в случае, если имеется дополнительная внутренняя неподвижная точка. При $n=2$ неравенство~\eqref{equGeneralPom} фактически было получено Солодовым и использовалось для нахождения точной области однолистности на классе $\mathscr B_{\alpha}[0, 1]$.
+\begin{OldTheorem}[Солодов~\cite{Sol2021}]\label{thSol}
+	Пусть $f\in \mathscr B_{\alpha}[0, 1]$, $\alpha\in (1,4]$.  Тогда $f$ однолистна в области
+	\begin{equation*}
+		\mathscr Y=	\Bigl\{z\in \mathbb D\colon
+		\frac	{\bigl|1-2z+|z|^2\bigr|}{1-|z|^2}<\frac{1}{\sqrt{\alpha-1}}
+		\Bigr\}.
+	\end{equation*}
+	Какова бы ни была область $\mathscr{U}$,  $\mathscr Y\varsubsetneq\mathscr{U}\subset\mathbb D$, найдется функция $f\in \mathscr B_{\alpha}[0, 1]$, не однолистная в области $\mathscr{U}$.
+\end{OldTheorem}
+\begin{remark}
+	Неравенства~\eqref{equC}, \eqref{equBP} и~\eqref{equGeneralPom} точные и достигаются на произведениях Бляшке порядка~$n$.	
+\end{remark}
+
+\section*{Доказательство результатов}
+
+ В этом разделе мы докажем теоремы~\ref{th1}--\ref{th3}.
+\begin{proof}[Доказательство теоремы~\ref{th1}]
+	По функции 	$f\in \mathscr B[0]$ составим дробно"=линейное преобразование
+	\[
+	g(z)=\frac{f(z)-c}{1-\overline{c}f(z)}.
+	\]	
+	Очевидно, что $g\in \mathscr B$, причем $g(a_1)=\ldots =g(a_n)=0$. Тогда в силу  леммы Шварца"--~Пика (см.~\cite[гл.~VIII, \S~1]{Goluzin})  функция $g$ представима в виде
+	\begin{equation*}
+		g(z)=\prod_{k=1}^{n}\frac{z-a_k}{1-\overline{a}_k z} \,h(z),	
+	\end{equation*}	
+	где $h\in \mathscr B$, либо $h$ --- тождественная константа, по модулю не превосходящая единицы. Полагая в этом представлении
+	$z=0$, получаем $-c =\prod_{k=1}^{n}a_k \,h(0)$, откуда следует доказываемое неравенство.
+\end{proof}	
+\begin{proof}[Доказательство теоремы~\ref{th2}]
+	Пусть  $f\in \mathscr B\{1\}$.
+	Тогда функция
+	\[
+	g(z)=\frac{1-\overline{c}}{1-c}\,\frac{f(z)-c}{1-\overline{c}f(z)}
+	\]	
+	также принадлежит классу $\mathscr B\{1\}$, причем $g(a_1)=\ldots =g(a_n)=0$. Согласно лемме Шварца"--~Пика  функция $g$ допускает следующее представление:
+	\begin{equation*}
+		g(z)=
+		\prod_{k=1}^{n}
+		\frac{1-\overline{a}_k}{1-a_k}\,\frac{z-a_k}{1-\overline{a}_kz}\, h(z),	
+	\end{equation*}	
+	где $h\in \mathscr B\{1\}$, либо $h(z)\equiv 1$. Если $h(z)\equiv 1$, имеем равенство в~\eqref{equBP}. Если $h\in \mathscr B\{1\}$,
+	функция
+	\[
+	h(z)=
+	\prod_{k=1}^{n}
+	\frac{1-a_k}{1-\overline{a}_k}\,\frac{1-\overline{a}_kz}{z-a_k}\, \frac{1-\overline{c}}{1-c}\,\frac{f(z)-c}{1-\overline{c}f(z)}
+	\]
+	имеет в точке $z=1$ положительную угловую производную. С другой стороны,
+	\[
+	h'(1)=f'(1)\,\frac{1-|c|^2}{|1-c|^2}-\sum_{k=1}^{n}\frac{1-|a_k|^2}{|1-a_k|^2}.
+	\]
+	Теорема доказана.
+\end{proof}	
+\begin{proof}[Доказательство теоремы~\ref{th3}]
+	Пусть  $f\in \mathscr B[0,1]$. Как и при доказательстве теоремы~\ref{th2} рассмотрим
+	функцию
+	\[
+	g(z)=\frac{1-\overline{c}}{1-c}\,\frac{f(z)-c}{1-\overline{c}f(z)}
+	\]	
+	из класса $\mathscr B\{1\}$ со свойством $g(a_1)=\ldots =g(a_n)=0$.
+	Более того, $g(0)=\lambda(c)$  и угловая производная в точке $z=1$ имеет вид
+	\begin{equation}\label{equG_pr}
+		g'(1)=f'(1)\,\frac{1-|c|^2}{|1-c|^2}.
+	\end{equation}
+	В силу леммы Шварца"--~Пика  функция $g$ допускает представление
+	\begin{equation}\label{equG}
+		g(z)=
+		\prod_{k=1}^{n}
+		\frac{1-\overline{a}_k}{1-a_k}\,\frac{z-a_k}{1-\overline{a}_kz}\, h(z),	
+	\end{equation}	
+	где $h\in \mathscr B\{1\}$, либо $h(z)\equiv 1$. Если $h(z)\equiv 1$, имеем равенство в~\eqref{equGeneralPom}. Пусть $h\in \mathscr B\{1\}$. Из~\eqref{equG} видно, что $g(0)=\prod_{k=1}^{n}\lambda(a_k)h(0)$.
+	Следовательно,
+	\begin{equation}\label{equH}
+		h(0)=\frac{\lambda(c)}{\prod_{k=1}^{n}\lambda(a_k)}.
+	\end{equation}
+	Из~\eqref{equG_pr} и~\eqref{equG} находим значение угловой производной функции $h$ в точке $z=1$
+	\begin{equation}\label{equH_pr}
+		h'(1)=
+		f'(1)\,\frac{1-|c|^2}{|1-c|^2}-\sum_{k=1}^{n}\frac{1-|a_k|^2}{|1-a_k|^2}.
+	\end{equation}
+	Поскольку $h\in\mathscr B\{1\}$, то cогласно лемме Жюлиа"--~Каратеодори имеет место неравенство
+	\begin{equation}\label{GK}
+		\frac{|1-h(0)|^2}{1-|h(0)|^2}\leqslant h'(1).
+	\end{equation}
+	Учитывая~\eqref{equH}"--~\eqref{GK}, получаем оценку
+	\[
+	\frac{|1-\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2}{1-|\lambda (c)/\prod_{k=1}^{n}\lambda(a_k)|^2}\leqslant
+	f'(1)\,\frac{1-|c|^2}{|1-c|^2}-\sum_{k=1}^{n}\frac{1-|a_k|^2}{|1-a_k|^2}.
+	\]
+Теорема доказана.
+\end{proof}	
+
+
+\section*{БЛАГОДАРНОСТИ}
+
+Авторы выражают  благодарность П.\,А. Бородину за полезные обсуждения данной темы на семинаре по
+геометрической теории приближений.
+
+\section*{ФИНАНСИРОВАНИЕ}
+
+Исследование выполнено за счет гранта Российского научного фонда (проект №~21-11-00131) в МГУ им. М.\,В. Ломоносова.
+
+
+\begin{thebibliography}{99}
+\bibitem{Lan}
+\textit{Landau Е.}
+Der Picard--Schottkysche Satz und die Blochsche Konstante //
+Sitzungsber. Preuss. Akad. Wiss. Berlin, Phys.-Math. Kl. 1926. V. 32. P. 467--474.
+
+\bibitem{Ahl}
+\textit{Ahlfors L.V.}
+Conformal invariants: Topics in geometric
+	function theory. New York: McGraw"=Hill Book Company, 1973. 	
+
+\bibitem{BeckerPom}
+\textit{Becker J., Pommerenke Ch.}
+Angular derivatives for holomorphic self-maps of the disk //
+Comput. Methods Funct. Theory. 2017.
+V. 17. 487--497.
+
+\bibitem{KudrSol2019}
+\textit{Кудрявцева О.С., Солодов А.П.}
+Двусторонние оценки областей однолистности классов голоморфных отображений круга в себя с двумя неподвижными точками //
+Матем. сб. 2019. Т. 210. № 7. 120--144.
+
+\bibitem{Gor2017}
+\textit{Горяйнов В.В.}
+Голоморфные отображения единичного круга в себя с двумя неподвижными точками //
+Матем. сб. 2017.
+Т. 208. № 3. 54--71.
+
+\bibitem{Sol2021}
+\textit{Солодов А.П.}
+ Точная область однолистности на классе голоморфных отображений круга в себя с внутренней и граничной неподвижными точками //
+Изв. РАН. Сер. матем. 2021. Т. 85. № 5. 190--218.
+
+\bibitem{Goluzin}
+\textit{Голузин Г.М.}
+Геометрическая теория функций комплексного переменного. M.:
+Наука, 1966.
+
+\end{thebibliography}
+
+\renewcommand\refname{References}
+
+
+\begin{thebibliography}{99}
+\bibitem{Lan_e}
+\textit{Landau Е.}
+Der Picard--Schottkysche Satz und die Blochsche Konstante //
+Sitzungsber. Preuss. Akad. Wiss. Berlin, Phys.-Math. Kl. 1926. V. 32. P. 467--474.
+
+\bibitem{Ahl_e}
+\textit{Ahlfors L.V.}
+Conformal invariants: Topics in geometric
+	function theory. New York: McGraw"=Hill Book Company, 1973. 	
+
+\bibitem{BeckerPom_e}
+\textit{Becker J., Pommerenke Ch.}
+Angular derivatives for holomorphic self-maps of the disk //
+Comput. Methods Funct. Theory. 2017.
+V. 17. 487--497.
+
+\bibitem{KudrSol2019_e}
+\textit{Кудрявцева О.С., Солодов А.П.}
+Двусторонние оценки областей однолистности классов голоморфных отображений круга в себя с двумя неподвижными точками //
+Матем. сб. 2019. Т. 210. № 7. 120--144.
+
+\bibitem{Gor2017_e}
+\textit{Горяйнов В.В.}
+Голоморфные отображения единичного круга в себя с двумя неподвижными точками //
+Матем. сб. 2017.
+Т. 208. № 3. 54--71.
+
+\bibitem{Sol2021_e}
+\textit{Солодов А.П.}
+ Точная область однолистности на классе голоморфных отображений круга в себя с внутренней и граничной неподвижными точками //
+Изв. РАН. Сер. матем. 2021. Т. 85. № 5. 190--218.
+
+\bibitem{Goluzin_e}
+\textit{Голузин Г.М.}
+Геометрическая теория функций комплексного переменного. M.:
+Наука, 1966.
+
+\end{thebibliography}
+
+
+\end{document} 
